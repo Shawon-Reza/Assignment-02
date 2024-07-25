@@ -21,7 +21,7 @@ header{
 .nav{
     display: flex;
     justify-content: space-between;
-    max-width:1060px ;
+    max-width:80%;
     margin: 0 auto;
     /* padding: 58px 190px; */
     align-items: center;
@@ -57,7 +57,7 @@ header{
     display: flex;
     gap: 150px;
     color: white;
-    max-width: 1060px;
+    max-width: 80%;
     margin: 0 auto;
     margin-top: 32px;
     margin-bottom: 100px;
