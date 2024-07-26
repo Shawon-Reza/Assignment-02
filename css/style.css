@@ -8,11 +8,17 @@
     box-sizing: border-box;
     font-family: Inter;
     background-color:rgb(17, 17, 17) ;
+    color: white;
 }
 .common-description{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
 
+}
+.common-heading{
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
 }
 /* Navber............ */
 header{
@@ -56,8 +62,8 @@ header{
 .p2{
     display: flex;
     gap: 150px;
-     /* justify-content: space-between; */
-     gap: 150px;
+     justify-content: space-between;
+     /* gap: 150px; */
     color: white;
     max-width:85%;
     margin: 0 auto;
@@ -88,13 +94,17 @@ header{
     font-family:miama;
     font-weight: 400;
 }
-/* .p2-img-container{
-         height: 36.25rem;
-         width: 21.8rem;
-} */
+.p2-img-container{
+        position:relative ;
+}
 .p2-text-container{
       width:520px ;
       height: 440px;
+}
+
+.p2-text-container .p2-heading{
+height: 280px;
+width:520px ;
 }
 .chng-btn::after{
     content: "Join Club Now!";
@@ -117,9 +127,9 @@ header{
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background-color:rgba(48, 48, 48, 0.5);
-    position: relative;
-    bottom: 170px;
-    right: 120px;
+    position: absolute;
+    bottom: 80px;
+    right: 240px;
 }
 
 .video-tutorial p ,.video-tutorial h1{
@@ -142,10 +152,40 @@ header{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.2);
-    position: relative;
-    bottom: 520px;
+    position: absolute;
+    bottom: 320px;
     left: 250px;
 
+}
+/* P3 Start Here................. */
+.p3{
+    max-width: 85%;
+    margin: 0 auto;
+}
+.p3-text-container{
+    text-align: center;
+}
+.p3-text-container .common-description{
+    margin: 14px 0px 54px 0px;
+}
+.p3-img-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+.p3-img-container img{
+       border-radius: 50%;
+       margin-bottom: 30px;
+}
+.p3-img h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+.p3-img{
+    text-align: center;
+}
+.p3-img .common-description{
+    margin: 6px 0px 100px 0px;
 }
 
 /* Responsiveness.........For medium Device */
@@ -167,6 +207,10 @@ header{
     .p2-text-container{
         width: 93%;
     }
+    /* P3 start here.......... */
+    .p3-img-container {
+        grid-template-columns: repeat(2,1fr);
+    }
     
 }
 
@@ -184,6 +228,9 @@ header{
         height: 335px;
   
     }
+    .p2-text-container .common-description{
+        margin-top: -130px;
+    }
      .p2{
         flex-direction: column;
         align-items: center;
@@ -198,6 +245,22 @@ header{
            font-size: 1.125rem;
            /* display: none; */
 
+     }
+     .workout-video{
+        top: 50px;
+        left: 200px;
+        width: 160px;
+
+     }
+     .video-tutorial-container{
+        top: 250px;
+        left: -10px;
+        width: 180px;
+
+     }
+     /* p3 start here */
+     .p3-img-container{
+        grid-template-columns: repeat(1,1fr);
      }
     
 }
