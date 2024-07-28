@@ -346,6 +346,12 @@ text-decoration: none;
  .p2-img-container{
     grid-template-columns: repeat(1,1fr);
  }
+ .p3-img-container{
+    width: auto;
+ }
+ .p3-img-container img{
+    width: 100%;
+ }
  /* p6 start.................... */
  .p6-img-container{
     grid-template-columns: repeat(1,1fr);
