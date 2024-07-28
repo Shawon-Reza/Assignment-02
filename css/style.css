@@ -162,6 +162,8 @@ nav li a:hover{
 /* P2 Start Here.................... */
 .p2{
     text-align: center;
+    max-width:75% ;
+    margin: 0 auto;
 }
 .p2 .common-description{
     margin-top: 14px;
@@ -176,6 +178,80 @@ nav li a:hover{
     display: grid;
     grid-template-columns: repeat(4,1fr);
  }
+ .p3{
+    max-width:75% ;
+    margin: 0 auto;
+    display: flex;
+    gap: 100px;
+    padding-top: 100px;
+    /* margin-bottom: 100px; */
+    padding-bottom: 150px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+    padding: 50px 30px 30px 30px;
+ }
+ .p3-img-container{
+    width: 366px;
+ }
+ .p3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+
+ }
+ .p3 button{
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(34, 34, 34);  
+ }
+ .p3 button:hover{
+    background-color: rgb(230, 83, 60);
+ }
+ .p3 .common-description {
+    margin-top: 14px;
+    margin-bottom: 35px;
+ }
+ /* P6 Start Here............... */
+.p6{
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.p6 .common-description{
+     margin-top: 15px;
+     margin-bottom: 50px;
+}
+.p6-img-container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.p6-img{
+ position: relative;
+}
+.p6-img h3{
+position: absolute;
+bottom: 30px;
+left: 10px;
+}
+.p6-img p{
+    position: absolute;
+    bottom: -40px;
+    left: 10px;
+    }
+.p6 img{
+    width: 100%;
+    height:100%;
+    border-radius: 18px;
+    object-fit: cover;
+
+}
+
+/* Responsiveness For Smaller device....... */
 /* Responsiveness For Smaller device....... */
 /* Responsiveness For Smaller device....... */
 @media screen and (max-width:576px) {
@@ -192,7 +268,7 @@ nav li a:hover{
 }
 
  /* First Page Start ...................*/
- .p1{
+ .p1,.p3{
     width: 100%;
     max-width: 90%;
     margin: 0 auto;
@@ -227,7 +303,15 @@ nav li a:hover{
  .p2-img-container{
     grid-template-columns: repeat(1,1fr);
  }
+ /* p6 start.................... */
+ .p6-img-container{
+    grid-template-columns: repeat(1,1fr);
 }
+
+}
+/* Responsivenes For Medium Device........... */
+/* Responsivenes For Medium Device........... */
+/* Responsivenes For Medium Device........... */
 /* Responsivenes For Medium Device........... */
 @media screen and (min-width:576px) and (max-width:992px) {
     nav ul{
@@ -252,6 +336,24 @@ nav li a:hover{
      }
      .p2-img-container{
         grid-template-columns: repeat(2,1fr);
+     }
+     /* P3 Start ....................... */
+     .p3{
+        justify-content: space-between;
+        max-width: 90%;
+        margin: 0 auto;
+     }
+     .p3-img-container{
+        width: 255px;  
+        height: auto;
+        
+     }
+     .p3-text-container{
+          width: 260px;
+          
+     }
+     .p3 img{
+        width: 100%;
      }
 
 
