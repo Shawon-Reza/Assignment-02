@@ -13,6 +13,10 @@
     font-weight: 400;
     opacity: .5;
 }
+.common-heading{
+    font-size: 48px;
+    font-weight: 900;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -155,7 +159,24 @@ nav li a:hover{
     font-weight: 900;
     padding-top: 12px;
 }
+/* P2 Start Here.................... */
+.p2{
+    text-align: center;
+}
+.p2 .common-description{
+    margin-top: 14px;
+    margin-bottom: 54px;
+}
+.p2-img img{
+    border-radius: 50%;
+    margin-bottom: 25px;
 
+}
+.p2-img-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+ }
+/* Responsiveness For Smaller device....... */
 /* Responsiveness For Smaller device....... */
 @media screen and (max-width:576px) {
  nav .ul-container{
@@ -198,6 +219,14 @@ nav li a:hover{
     width: 30px;
     border: 1px solid red;
  }
+ /* Responsive 2nd Page...... */
+ .p2{
+    max-width: 90%;
+    margin: 0 auto;
+ }
+ .p2-img-container{
+    grid-template-columns: repeat(1,1fr);
+ }
 }
 /* Responsivenes For Medium Device........... */
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -215,6 +244,14 @@ nav li a:hover{
         gap: 100px;
         max-width: 75%;
         margin: 0 auto;
+     }
+     /* Responsive 2nd page ............. */
+     .p2{
+        max-width: 75%;
+        margin: 0 auto;  
+     }
+     .p2-img-container{
+        grid-template-columns: repeat(2,1fr);
      }
 
 
