@@ -7,260 +7,31 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Inter;
-    background-color:rgb(17, 17, 17) ;
     color: white;
 }
-.common-description{
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 1rem;
-
-}
-.common-heading{
-    color: rgb(255, 255, 255);
-    font-size: 48px;
-    font-weight: 900;
-}
-/* Navber............ */
-header{
-   background-color: rgb(17, 17, 17) ;
-}
-.nav{
+nav{
     display: flex;
     justify-content: space-between;
-    max-width:85%;
+    max-width:75% ;
     margin: 0 auto;
-    /* padding: 58px 190px; */
+}
+header{
+    background-color: rgb(17, 17, 17);  
+}
+nav ul{
+    display: flex;
+    gap: 45px;
+    height: 100%;
     align-items: center;
 }
-.nav li {
+nav li{
     list-style: none;
-    margin-right: 53px;
-    
 }
-.nav ul{
-    display: flex;
-}
-.nav li a{
+nav li a {
     text-decoration: none;
-    color: rgb(255, 255, 255) ;
-    font-size: 1.125rem;
-    font-weight: 400;
-    padding: 8px 20px;
-
-}
-.nav li a:hover{
-     background-color: rgb(230, 83, 60);
-     border-radius: 46px;
-     background: rgb(230, 83, 60);
 }
 .fitness{
-    color: rgb(230, 83, 60);
-    font-size: 2.25rem;
+    font-size: 36px;
     font-weight: 800;
-}
-/* First Page Start here........................... */
-.p2{
-    display: flex;
-    gap: 150px;
-     justify-content: space-between;
-     /* gap: 150px; */
-    color: white;
-    max-width:85%;
-    margin: 0 auto;
-    margin-top: 32px;
-    margin-bottom: 100px;
-}
-.p2-heading{
-     color: rgb(255, 255, 255);
-     font-size: 4.8rem;
-     font-weight: 900;
-     margin-bottom: 1.75rem;
-     
-}
-.p2-button{
-    box-sizing: border-box;
-    border: 1px solid white;
-    border-radius: 42px;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 1rem 2.5rem;
-    margin-top: 1.75rem;
-}
-.p2-button:hover{
-    background-color: rgb(230, 83, 60) ;
-}
-.shape{
-    font-family:miama;
-    font-weight: 400;
-}
-.p2-img-container{
-        position:relative ;
-}
-.p2-text-container{
-      width:520px ;
-      height: 440px;
-}
-
-.p2-text-container .p2-heading{
-height: 280px;
-width:520px ;
-}
-.chng-btn::after{
-    content: "Join Club Now!";
-   }
-.video-tutorial-container .empty {
-    background-color:rgb(230, 83, 60) ;
-    height:30px ;
-    width: 30px;
-    border-radius: 50%;
-    margin: 25px;
-    margin-right: -5px;
-
-}
-.video-tutorial-container{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    width: 206px;
-    height: 96px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color:rgba(48, 48, 48, 0.5);
-    position: absolute;
-    bottom: 80px;
-    right: 240px;
-}
-
-.video-tutorial p ,.video-tutorial h1{
-    background-color:rgba(48, 48, 48, .1);
-    opacity: .5;
-
-}
-.video-tutorial{
-    background-color:rgba(48, 48, 48, .1);
-
-}
-.workout-video p,.workout-video h1{
-    background-color:rgba(48, 48, 48, 0.00001);
-    ;
-}
-.workout-video{
-    width: 190px;
-    height: 96px;
-    padding: 16px 23px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.2);
-    position: absolute;
-    bottom: 320px;
-    left: 250px;
-
-}
-/* P3 Start Here................. */
-.p3{
-    max-width: 85%;
-    margin: 0 auto;
-}
-.p3-text-container{
-    text-align: center;
-}
-.p3-text-container .common-description{
-    margin: 14px 0px 54px 0px;
-}
-.p3-img-container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 40px;
-}
-.p3-img-container img{
-       border-radius: 50%;
-       margin-bottom: 30px;
-}
-.p3-img h5{
-    font-size: 18px;
-    font-weight: 600;
-}
-.p3-img{
-    text-align: center;
-}
-.p3-img .common-description{
-    margin: 6px 0px 100px 0px;
-}
-
-/* Responsiveness.........For medium Device */
-@media screen and (min-width:576px) and (max-width:992px) {
-    .nav li{
-        margin-right: 20px;
-    }
-    .nav{
-        max-width:85% ;
-        margin: 0 auto;
-      
-    }
-    /* P2 start from here........*/
-    .p2{
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-    }
-    .p2-text-container{
-        width: 93%;
-    }
-    /* P3 start here.......... */
-    .p3-img-container {
-        grid-template-columns: repeat(2,1fr);
-    }
-    
-}
-
-/* Responsiveness.........For Small Device */
-@media screen and (max-width:576px) {
-    .nav ul{
-        display: none;
-    }
-    .nav{
-        margin-left: 50px;
-    }
-    /* p2 Start Here.... */
-    .p2-text-container{
-        width: 350px;
-        height: 335px;
-  
-    }
-    .p2-text-container .common-description{
-        margin-top: -130px;
-    }
-     .p2{
-        flex-direction: column;
-        align-items: center;
-
-     }
-     .p2-heading{
-        font-size: 2.25rem;
-     }
-     .p2-button{
-           width: 169px;
-           height: 60px;
-           font-size: 1.125rem;
-           /* display: none; */
-
-     }
-     .workout-video{
-        top: 50px;
-        left: 200px;
-        width: 160px;
-
-     }
-     .video-tutorial-container{
-        top: 250px;
-        left: -10px;
-        width: 180px;
-
-     }
-     /* p3 start here */
-     .p3-img-container{
-        grid-template-columns: repeat(1,1fr);
-     }
-    
+    color: rgb(230, 83, 60);
 }
