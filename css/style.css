@@ -220,6 +220,7 @@ nav li a:hover{
     margin: 0 auto;
     text-align: center;
     margin-top: 100px;
+    padding-bottom: 90px;
 }
 .p6 .common-description{
      margin-top: 15px;
@@ -229,6 +230,9 @@ nav li a:hover{
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3,1fr);
+    background-color:rgb(34, 34, 34) ;
+    padding: 20px;
+    border-radius: 18px;
 }
 .p6-img{
  position: relative;
@@ -250,7 +254,46 @@ left: 10px;
     object-fit: cover;
 
 }
-
+/* Footer Start............. */
+footer{
+    background-color: rgb(34, 34, 34);
+}
+.ft{
+    max-width: 75%;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 35px;
+}
+.ft-div-container{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.ft .div1{
+    width: 445px;
+}
+.ft li a{
+text-decoration: none;
+}
+.ft li{
+    list-style: none;
+}
+.ft .common-description{
+    margin-top: 20px;
+}
+.ft h3{
+    margin-bottom: 35px;
+}
+.ft .h-break{
+    margin-bottom: 40px;
+     opacity: .3;
+}
+.ft-text{
+    text-align: center;
+}
+.ft .div1 .common-description{
+    margin-bottom: 100px;
+}
 /* Responsiveness For Smaller device....... */
 /* Responsiveness For Smaller device....... */
 /* Responsiveness For Smaller device....... */
@@ -307,7 +350,25 @@ left: 10px;
  .p6-img-container{
     grid-template-columns: repeat(1,1fr);
 }
+/* Footer Start ............ */
+.ft-div-container{
+    flex-direction: column;
+}
+.ft .div2 h3 {
+    margin-top: -70px;
+    margin-bottom: -1px;
+}
+.ft .div1{
+    width: 315px;
+}
+.ft .div3 h3{
+    margin-top: 40px;
+    margin-bottom: -1px;
 
+}
+.ft .div3 ul{
+    margin-bottom: 20px;
+}
 }
 /* Responsivenes For Medium Device........... */
 /* Responsivenes For Medium Device........... */
@@ -356,5 +417,14 @@ left: 10px;
         width: 100%;
      }
 
+     /* Footer ......................... */
+     .ft-div-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+     }
+     .div1{
+        grid-column: span 2;
+     }
 
 }
