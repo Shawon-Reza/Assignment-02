@@ -294,6 +294,91 @@ text-decoration: none;
 .ft .div1 .common-description{
     margin-bottom: 100px;
 }
+/* Page 5 Start............. */
+.p5{
+    /* background-color: rgb(34, 34, 34); */
+    /* margin-top: 60px; */
+}
+.p5 table{
+    border-collapse: collapse;
+    width: auto;
+}
+.p5 th, td {
+    border: 1px solid #555;
+    text-align: left;
+    padding: 12px;                   
+    width: 50%;
+}
+.p5 td{
+    font-size: 14px;
+    font-weight: 400;
+    opacity: .5;
+}
+.p5 th{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.p5-background{
+     background-color: rgb(34, 34, 34);
+}
+.p5-div1{
+    text-align: center;
+    /* max-width: 50%;
+    margin: 0 auto; */
+    padding: 65px 0px;
+
+}
+.p5-div2{
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.p5-div2 .common-description{
+    margin: 14px 0px 35px 0px;
+}
+.p5-div2 caption{
+       margin-bottom: 50px;
+       font-size: 20px;
+       font-weight: 900;
+}
+.p5-div2-form-container{
+    width: 450px;
+     
+}
+
+input, select {
+    background-color: #333333;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 150px;
+    width: 100%;
+}
+.p5-form-container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+}
+.full-width{
+    grid-column: span 2;
+}
+.p5-btn{
+    width: 224px;
+    height: 54px;
+    margin-top: 35px;
+    border-radius: 42px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color:rgb(34, 34, 34); 
+}
+.p5-btn:hover{
+      background-color: rgb(230, 83, 60);
+}
+
+
+
 /* Responsiveness For Smaller device....... */
 /* Responsiveness For Smaller device....... */
 /* Responsiveness For Smaller device....... */
@@ -351,6 +436,19 @@ text-decoration: none;
  }
  .p3-img-container img{
     width: 100%;
+ }
+ /* Page 5 start................ */
+ .p5-div1{
+    text-align: start;
+    max-width: 90%;
+    margin: 0 auto;
+ }
+ .p5-div2{
+    flex-direction: column;
+    gap:40px ;
+ }
+ .p5-div2-form-container{
+    width: auto;
  }
  /* p6 start.................... */
  .p6-img-container{
@@ -422,6 +520,18 @@ text-decoration: none;
      .p3 img{
         width: 100%;
      }
+     /* Page 5 Start................ */
+     .p5-div1{
+        max-width: 90%;
+        margin: 0 auto;
+     }
+        .p5-div2{
+            flex-direction: column;
+            gap: 60px;
+        }
+        .p5-div2-form-container{
+            width: auto;
+        }
 
      /* Footer ......................... */
      .ft-div-container{
