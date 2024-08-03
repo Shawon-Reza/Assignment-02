@@ -445,6 +445,29 @@ input, select {
 .p5-btn:hover{
       background-color: rgb(230, 83, 60);
 }
+/* Unique Section start.................... */
+.p-u{
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.p-u-text-container{
+    text-align: center;
+}
+.p-u-btn-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 50px;
+}
+.p-u-btn-container button{
+     background-color: rgb(230, 83, 60);
+}
+.p-u-btn-container button:hover{
+                 
+}
+
 
 
 
