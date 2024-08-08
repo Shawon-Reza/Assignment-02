@@ -364,10 +364,6 @@ text-decoration: none;
     margin-bottom: 100px;
 }
 /* Page 5 Start............. */
-.p5{
-    /* background-color: rgb(34, 34, 34); */
-    /* margin-top: 60px; */
-}
 .p5 table{
     border-collapse: collapse;
     width: auto;
@@ -467,7 +463,85 @@ input, select {
 .p-u-btn-container button:hover{
                  
 }
+/* Unieque section................... */
+.us-container{
+    max-width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2%;
+    margin-top: 20px;
+}
+.us-container img{
+    width: 100%;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.us{
+    text-align: center;
+    margin-top: 70px;
 
+}
+.us .div2,.us .div3{
+    display: flex;
+    justify-content: space-between;
+}
+.us p{
+    font-size: .8rem;
+}
+.us h5{
+    font-weight: 500;
+}
+.us .div2{
+    padding: 0% 4%; 
+
+}
+.us .div3{
+    opacity: .8; 
+    padding: 0% 4%; 
+}
+.us .div4{
+    text-align: start;
+    padding: 0% 10%; 
+}
+.us-div1,.us-div2,.us-div3{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.us .p1-btn{
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+    border: 1px solid rgb(255, 255, 255,.5);
+    /* transform: skew(-10deg); */
+    padding: 3% 9%;
+    background-color: rgb(34, 34, 34);
+}
+.us .div5{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    gap: 5%;
+}
+.us-div1{
+    background-color: rgb(34, 34, 34,.3);
+    border-radius: 10px;
+}
+.us-div2{
+    background-color: rgb(34, 34, 34,.6);
+    border-radius: 10px;
+
+}
+.us-div3{
+    background-color: rgb(34, 34, 34,.8);
+    border-radius: 10px;
+
+}
+.us .p1-btn:hover{
+    background-color: rgb(230, 83, 60);
+}
 
 
 
@@ -543,6 +617,10 @@ input, select {
     max-width: 90%;
     margin: 0 auto;
  }
+ .p4{
+    max-width: 90%;
+    margin: 0 auto;
+ }
  .p4-img-container{
     grid-template-columns: repeat(2,1fr);
     grid-template-rows:repeat(2,140px) ;
@@ -559,7 +637,11 @@ input, select {
  }
  /* p6 start.................... */
  .p6-img-container{
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1,1fr);  
+}
+.p6{
+    max-width: 90%;
+    margin: 0 auto;
 }
 /* Footer Start ............ */
 .ft-div-container{
@@ -579,6 +661,15 @@ input, select {
 }
 .ft .div3 ul{
     margin-bottom: 20px;
+}
+/* Unieque Section...................... */
+.us{
+    margin-top: 50px;
+}
+.us-container{
+    max-width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(1,1fr);
 }
 }
 /* Responsivenes For Medium Device........... */
@@ -628,6 +719,10 @@ input, select {
         width: 100%;
      }
      /* P4 Start */
+     .p4{
+        max-width: 90%;
+        margin: 0 auto;
+     }
      .p4-img{
         width: auto;
      }
@@ -654,5 +749,18 @@ input, select {
      .div1{
         grid-column: span 2;
      }
+     /* Unieque Section......... */
+    
+     .us-container{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    /* .us-div3{
+        grid-column: 1 / -1;
+        justify-self: center;
+        /* margin-left: 150px; */
+    } */
 
 }
