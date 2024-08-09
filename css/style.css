@@ -674,6 +674,9 @@ input, select {
     margin: 0 auto;
     grid-template-columns: repeat(1,1fr);
 }
+.us .common-heading{
+    margin-bottom: 20px;
+}
 }
 /* Responsivenes For Medium Device........... */
 /* Responsivenes For Medium Device........... */
